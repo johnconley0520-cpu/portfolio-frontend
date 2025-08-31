@@ -1,45 +1,37 @@
-.hero{ overflow: clip; }
-.hero-grid{
-  display:grid; gap:40px; align-items:center;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 960px){
-  .hero-grid{ grid-template-columns: 1.1fr .9fr; gap: 56px; }
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    text-align: center;
 }
 
-.eyebrow{
-  display:inline-block; padding:6px 12px; border:1px solid var(--border);
-  border-radius: 999px; color: var(--muted); background: var(--surface);
-  font-weight:600; margin-bottom: 14px;
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
-.headline{
-  font-size: clamp(30px, 5vw, 56px); line-height:1.08; letter-spacing:-.02em;
-  margin-bottom: 14px;
-}
-.summary{ color: var(--muted); margin-bottom: 22px; max-width: 60ch; }
-.cta{ display:flex; gap:12px; flex-wrap: wrap; }
 
-.hero-art{ position:relative; min-height: 280px; }
-.blob{
-  position:absolute; inset:-40px -80px auto auto;
-  width:min(560px, 92vw); height:min(560px, 92vw);
-  border-radius: 50%;
-  background: conic-gradient(from 180deg at 50% 50%, var(--primary), var(--accent), var(--primary));
-  filter: blur(40px) saturate(140%); opacity:.35;
-  animation: float 8s ease-in-out infinite;
+.hero-content h1 span {
+    color: #38bdf8;
 }
-@keyframes float{
-  0%,100%{ transform: translateY(0) rotate(0.4deg); }
-  50%{ transform: translateY(-12px) rotate(-0.4deg); }
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cbd5e1;
 }
-.hero-card{
-  position:relative; margin-top: 40px; padding:18px; display:flex; gap:12px; align-items:center;
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
 }
-.avatar{
-  width:56px; height:56px; border-radius:50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  display:grid; place-items:center; color:#fff; font-weight:700;
-  box-shadow: 0 10px 26px rgba(0,0,0,.35);
+
+.btn-primary:hover {
+    background: #0ea5e9;
 }
-.hero-card h3{ margin:0 0 4px 0; }
-.hero-card p{ margin:0; color: var(--muted); font-size: 14px; }
