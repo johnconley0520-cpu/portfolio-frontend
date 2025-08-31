@@ -1,0 +1,16 @@
+.form{ padding: 20px; }
+.row{
+  display:grid; gap: 14px; margin-bottom: 14px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px){
+  .row{ grid-template-columns: 1fr 1fr; }
+}
+label{ display:flex; flex-direction:column; gap: 6px; color: var(--muted); }
+input, textarea{
+  background: var(--surface-2); color: var(--text);
+  border:1px solid var(--border); border-radius: 12px;
+  padding: 12px 14px; outline: none;
+}
+input:focus, textarea:focus{ border-color: rgba(124,92,255,.45); }
+button{ margin-top: 10px; }

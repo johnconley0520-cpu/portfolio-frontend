@@ -1,0 +1,26 @@
+.navbar{
+  position: sticky; top:0; z-index:50;
+  backdrop-filter: saturate(160%) blur(10px);
+  background: rgba(12,15,36,0.6);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  height: 84px;
+}
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-weight:700; font-size: 20px;
+}
+.brand .dot{
+  width:12px; height:12px; border-radius:50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 0 0 6px rgba(124,92,255,.2);
+}
+.nav-links{ display:flex; align-items:center; gap:20px; }
+.nav-links a{
+  padding:10px 12px; border-radius:10px; color: var(--muted);
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+.nav-links a:hover{ color:#fff; background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+.nav-cta{ background: linear-gradient(135deg, var(--primary), var(--accent)); color:#fff; }

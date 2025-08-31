@@ -1,0 +1,13 @@
+.footer{
+  border-top:1px solid var(--border);
+  background: rgba(12,15,36,0.7);
+  backdrop-filter: blur(8px);
+}
+.foot{
+  display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center;
+  padding: 26px 0;
+}
+.foot p{ color: var(--muted); }
+.links{ display:flex; gap: 14px; }
+.links a{ color: #bcd6ff; }
+.links a:hover{ color:#fff; }

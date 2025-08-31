@@ -1,0 +1,8 @@
+main{ padding-top: 84px; } /* space for sticky navbar */
+
+/* Subtle grid background for sections */
+.section::before{
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:.12;
+  background-image: radial-gradient(circle at 1px 1px, #fff 1px, transparent 1px);
+  background-size: 24px 24px;
+}
